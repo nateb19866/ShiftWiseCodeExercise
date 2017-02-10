@@ -26,7 +26,7 @@ namespace CardProjectTests
         }
 
         /// <summary>
-        /// This tests the swap utility to ensure that it actually swaps the values
+        /// This tests the swap utility to ensure that it works if the card is swapped with itself.
         /// </summary>
         [TestMethod]
         public void SwapWithSameCardTest()
