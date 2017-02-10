@@ -11,7 +11,7 @@ namespace CardProject
 
         /// <summary>
         /// The ID is computed by concatenating the card value and suit.  This is useful when trying to sort
-        /// the deck of cards 
+        /// the deck of cards
         /// </summary>
         public int Id
         {

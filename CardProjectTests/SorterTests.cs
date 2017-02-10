@@ -15,26 +15,19 @@ namespace CardProjectTests
         {
             var invertedDeck = CardDeckGenerator.GenerateCardDeck();
 
-            //Note: We have another test that ensures the generator generates a sorted deck of cards, so we can safely use the vanilla output of the
-            //generator as a reference
-            var deckToCompare = CardDeckGenerator.GenerateCardDeck();
-
             //We're reversing the deck to force the sorter to move every row
             invertedDeck.Reverse();
 
             var sortedDeck = Sorter.SortDeck(invertedDeck);
 
-            bool differenceFound = false;
-
-            for (int i = 0; i < deckToCompare.Count; i++)
+            for (int i = 0; i < sortedDeck.Count; i++)
             {
-                differenceFound = deckToCompare[i].Id != sortedDeck[i].Id;
+                //Prevents bounding error
+                if (i == 0)
+                    continue;
 
-                if (differenceFound)
-                    break;
+                Assert.IsTrue(sortedDeck[i - 1].Id < sortedDeck[i].Id);
             }
-
-            Assert.IsFalse(differenceFound);
         }
 
         /// <summary>

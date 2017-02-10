@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace CardProject.Utils
 {
@@ -17,9 +15,8 @@ namespace CardProject.Utils
         /// <returns></returns>
         public static int GetRandomInt(int minValue, int maxValue)
         {
-
             //Instead of using the lame pseudo-random Random object, we're using the much better implementation
-            //that's contained within the Cryptography library. 
+            //that's contained within the Cryptography library.
             //Code found here: http://stackoverflow.com/questions/6111960/rngcryptoserviceprovider-generate-random-numbers-in-the-range-0-randommax
 
             var rng = RandomNumberGenerator.Create();
@@ -31,7 +28,6 @@ namespace CardProject.Utils
             Decimal NewRange = maxValue - minValue;
             Decimal NewValue = ((Decimal)rand - (Decimal)int.MinValue) / OldRange * NewRange + (Decimal)minValue;
             return (int)NewValue;
-           
         }
     }
 }

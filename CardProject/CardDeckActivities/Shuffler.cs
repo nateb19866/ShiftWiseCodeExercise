@@ -14,7 +14,7 @@ namespace CardProject.CardDeckActivities
         {
             //Basic idea here is that if we run through the deck and randomly swap each card with another card,
             //and repeat the process to increase randomness, we can shuffle the deck to an acceptable level of randomness
-            
+
             //Adding the ability to run through the deck in multiple iterations allows for extra randomness
             for (int iteration = 0; iteration < 5000; iteration++)
             {

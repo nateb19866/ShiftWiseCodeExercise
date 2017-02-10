@@ -34,11 +34,10 @@ namespace CardProjectTests
             var cardList = new List<Card>() { new Card(){ Suit = CardSuit.Clubs, Value = CardValue.Ace },
                                               new Card(){ Suit = CardSuit.Diamonds, Value = CardValue.Four}};
 
-            cardList.Swap(0,0);
+            cardList.Swap(0, 0);
 
             Assert.AreEqual(11, cardList[0].Id);
             Assert.AreEqual(42, cardList[1].Id);
-           
         }
 
         [TestMethod]
@@ -53,7 +52,6 @@ namespace CardProjectTests
                 Assert.IsTrue(randomInt >= 0);
                 Assert.IsTrue(randomInt <= 51);
             }
-
         }
 
         /// <summary>
