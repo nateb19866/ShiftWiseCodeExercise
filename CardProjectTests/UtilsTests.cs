@@ -60,12 +60,12 @@ namespace CardProjectTests
         [TestMethod]
         public void ConcatIntTest()
         {
-            //Since these are one-liners, didn't see the need to create separate tests for each bound.
+            //Since these are one-liners, didn't see the need to create separate tests for each assertion.
 
             //Test low bound
             Assert.AreEqual(11, Helpers.ConcatInt(1, 1));
 
-            //Test mid bound
+            //Test mid value
             Assert.AreEqual(43, Helpers.ConcatInt(4, 3));
 
             //Test upper bound
