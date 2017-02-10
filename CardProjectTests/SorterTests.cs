@@ -1,12 +1,24 @@
 ﻿using CardProject.CardDeckActivities;
 using CardProject.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace CardProjectTests
 {
     [TestClass]
     public class SorterTests
     {
+
+        /// <summary>
+        /// Does a basic null check test
+        /// </summary>
+        [ExpectedException(typeof(ArgumentNullException))]
+        [TestMethod]
+        public void TestSorterNullCheck()
+        {
+            Sorter.SortDeck(null);
+        }
+
         /// <summary>
         /// Since we're using Linq to sort the cards, this is just a sanity check that ensures the deck is sorted.
         /// </summary>

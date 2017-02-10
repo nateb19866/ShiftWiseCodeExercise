@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 
 namespace CardProject.Utils
 {
-    public static class RandomNumberUtils
+    internal static class RandomNumberUtils
     {
         /// <summary>
         /// This retrieves a random int from a range.  This is a function because there
@@ -13,7 +13,7 @@ namespace CardProject.Utils
         /// <param name="startRange"></param>
         /// <param name="endRange"></param>
         /// <returns></returns>
-        public static int GetRandomInt(int minValue, int maxValue)
+        internal static int GetRandomInt(int minValue, int maxValue)
         {
             //Instead of using the lame pseudo-random Random object, we're using the much better implementation
             //that's contained within the Cryptography library.

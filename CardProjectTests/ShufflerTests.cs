@@ -1,6 +1,7 @@
 ﻿using CardProject.CardDeckActivities;
 using CardProject.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace CardProjectTests
 {
@@ -19,6 +20,16 @@ namespace CardProjectTests
             var shuffledDeck = Shuffler.ShuffleCards(deckToShuffle);
 
             Assert.AreEqual(deckToCompare.Count, shuffledDeck.Count);
+        }
+
+        /// <summary>
+        /// Does a basic null check test
+        /// </summary>
+        [ExpectedException(typeof(ArgumentNullException))]
+        [TestMethod]
+        public void TestShufflerNullCheck()
+        {
+            Shuffler.ShuffleCards(null);
         }
 
         [TestMethod]
