@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <None Update="Card.d.ts">
+      <DependentUpon>Card.cs</DependentUpon>
+    </None>
+    <None Update="CardDeckActivities\Shuffler.d.ts">
+      <DependentUpon>Shuffler.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>
