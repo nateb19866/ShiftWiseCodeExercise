@@ -1,6 +1,7 @@
 ﻿using CardProject.Utils;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CardProject.CardDeckActivities
 {
@@ -15,8 +16,8 @@ namespace CardProject.CardDeckActivities
         {
 
             //Null check
-            if (listToShuffle == null)
-                throw new ArgumentNullException("Please enter a valid list!");
+            if (listToShuffle == null || !listToShuffle.Any())
+                throw new ArgumentNullException("Please pass in a valid deck!");
             
             //Basic idea here is that if we run through the deck and randomly swap each card with another card,
             //and repeat the process to increase randomness, we can shuffle the deck to an acceptable level of randomness

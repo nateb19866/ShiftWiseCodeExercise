@@ -1,7 +1,9 @@
-﻿using CardProject.CardDeckActivities;
+﻿using CardProject;
+using CardProject.CardDeckActivities;
 using CardProject.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace CardProjectTests
 {
@@ -31,6 +33,18 @@ namespace CardProjectTests
         {
             Shuffler.ShuffleCards(null);
         }
+
+
+        /// <summary>
+        /// Does a basic 0 count check
+        /// </summary>
+        [ExpectedException(typeof(ArgumentNullException))]
+        [TestMethod]
+        public void TestShufflerZeroCardCheck()
+        {
+            Shuffler.ShuffleCards(new List<Card>());
+        }
+
 
         [TestMethod]
         public void TestShufflerCards()

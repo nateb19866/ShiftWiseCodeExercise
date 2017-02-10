@@ -16,7 +16,7 @@ namespace CardProject.CardDeckActivities
 
             //Null check
             if (listToSort == null)
-                throw new ArgumentNullException("Please enter a valid list!");
+                throw new ArgumentNullException("Please pass in a valid deck!");
             //Yay for built-in sort capabilities! The unique ID of each card guarantees that
             //sorting the list ascending by ID will sort the cards in ascending order
             return listToSort.OrderBy(i => i.Id).ToList();

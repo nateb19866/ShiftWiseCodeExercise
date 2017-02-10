@@ -11,6 +11,9 @@
   
 
   <ItemGroup>
+    <None Update="AssemblyInfo.d.ts">
+      <DependentUpon>AssemblyInfo.cs</DependentUpon>
+    </None>
     <None Update="Card.d.ts">
       <DependentUpon>Card.cs</DependentUpon>
     </None>
