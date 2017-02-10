@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardProject", "CardCore\CardProject.csproj", "{5357DAF5-36D2-47A3-BF89-25DEE0E5C548}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardProject", "CardProject\CardProject.csproj", "{5357DAF5-36D2-47A3-BF89-25DEE0E5C548}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardProjectTests", "CardProjectTests\CardProjectTests.csproj", "{7361FC37-716E-4F9B-B001-DC4CFCA9672D}"
 EndProject

@@ -64,7 +64,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CardCore\CardProject.csproj">
+    <ProjectReference Include="..\CardProject\CardProject.csproj">
       <Project>{5357DAF5-36D2-47A3-BF89-25DEE0E5C548}</Project>
       <Name>CardProject</Name>
     </ProjectReference>
