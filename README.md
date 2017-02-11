@@ -1,4 +1,4 @@
- # ShiftWise Code Exercise
+# ShiftWise Code Exercise
 
 This exercise was created as a .NET Standard library using the new .csproj system, so you'll need to use a copy of VS 2017 RC if you want to open the solution inside VS.
 
