@@ -9,18 +9,6 @@
     <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
   </ItemGroup>
 
-  
-
-  <ItemGroup>
-    <None Update="AssemblyInfo.d.ts">
-      <DependentUpon>AssemblyInfo.cs</DependentUpon>
-    </None>
-    <None Update="Card.d.ts">
-      <DependentUpon>Card.cs</DependentUpon>
-    </None>
-    <None Update="CardDeckActivities\Shuffler.d.ts">
-      <DependentUpon>Shuffler.cs</DependentUpon>
-    </None>
-  </ItemGroup>
+ 
 
 </Project>
